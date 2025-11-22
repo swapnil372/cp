@@ -19,6 +19,9 @@ using namespace std;
 #define debugarr(arr, size) for (int i = 0; i < size; i++) cout << arr[i] << " "; cout << endl;
 #define yes cout << "YES\n"
 #define no cout << "NO\n"
+#define sortt(v) sort((v).begin(), (v).end())
+#define maxx(v) max_element((v).begin(), (v).end())
+#define minn(v) min_element((v).begin(), (v).end())
 
 // ---------- Type Aliases ----------
 using ll   = long long;
@@ -26,6 +29,15 @@ using ull  = unsigned long long;
 using ld   = long double;
 using pii  = pair<int,int>;
 using pll  = pair<long long,long long>;
+using vint  = vector<int>;
+using vll   = vector<long long>;
+using stkint = stack<int>;
+using qint   = queue<int>;
+using mpii   = map<int,int>;
+using mpll   = map<long long,long long>;
+using mpli   = map<long long,int>;
+using setint = set<int>;
+using setll  = set<long long>;
 
 // ---------- Constants ----------
 const ll MOD = 1e9+7;
@@ -33,10 +45,10 @@ const ll INF = 1e18;
 
 // ---------- IO ----------
 void setupIO() {
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+    #endif
 }
 
 void fastIO() {
@@ -46,11 +58,10 @@ void fastIO() {
 
 // ---------- Main ----------
 
-
 int main() {
     //setupIO();
     fastIO();
-    
+
     //cout << "Hello world\n";
     return 0;
 }
